@@ -18,7 +18,7 @@ gc = pygsheets.authorize(service_file='silent-blade-278608-97476201bec3.json')
 
 app = Flask(__name__)
 
-passs = quote_plus("Kanva@2003")
+passs = quote_plus("")
 client = pymongo.MongoClient(f"mongodb+srv://KanvaBhatia:{passs}@cluster0.ltwqycz.mongodb.net/?retryWrites=true&w=majority")
 db = client.OnlyHisaab_data
 print(db.user_data.find_one({'email':'ooooo@ooo.com'})['pass'])
